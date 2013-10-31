@@ -21,8 +21,7 @@ public class MyMenu {
 
 	JMenuBar menu = new JMenuBar();
 	private PaintWindow paintWindow;
-	
-	
+
 	public MyMenu(final PaintWindow paintWindow) {
 		this.setPaintWindow(paintWindow);
 		// Menu Plik
@@ -41,10 +40,10 @@ public class MyMenu {
 
 		// Menu Edycja
 		JMenu edit = new JMenu("Edycja");
-		JMenuItem clean,undo, line, rectangle, circutle, setting;
+		JMenuItem clean, undo, line, rectangle, circutle, setting;
 		undo = new JMenuItem("Cofnij");
 		undo.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
@@ -54,7 +53,7 @@ public class MyMenu {
 		edit.add(undo);
 		clean = new JMenuItem("Czyść");
 		clean.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
@@ -65,29 +64,29 @@ public class MyMenu {
 		JMenu draw = new JMenu("Rusuj");
 		line = new JMenuItem("Linia");
 		line.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				paintWindow.getArea().getDm().setChoose("LINE");
-				
+
 			}
 		});
 		draw.add(line);
 		rectangle = new JMenuItem("Prostokąt");
 		rectangle.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				paintWindow.getArea().getDm().setChoose("RECTANGLE");
-				
+
 			}
 		});
 		draw.add(rectangle);
 		circutle = new JMenuItem("Koło");
 		circutle.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub

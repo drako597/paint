@@ -3,26 +3,19 @@ package listner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
-
 import javax.swing.JFileChooser;
 
-import paint.CollectionFigle;
 import paint.MyMenu;
 
-import figle.Figle;
-
 public class WindowSave extends JFileChooser implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private MyMenu myMenu;
-	private PrintWriter printFile;
-	private int fileName;
 	private ObjectOutputStream out;
 
 	public WindowSave(MyMenu myMenu) {

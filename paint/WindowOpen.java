@@ -11,6 +11,10 @@ import java.io.ObjectInputStream;
 import javax.swing.JFileChooser;
 
 public class WindowOpen extends JFileChooser implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private MyMenu myMenu;
 	private ObjectInputStream in;
 	private CollectionFigle collectionFigle;

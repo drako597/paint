@@ -12,13 +12,10 @@ public class DrawMenager {
 	private Area area;
 	private String choose = "LINE";
 	private Color figleColor = Color.RED;
-	private ChooseFigure chooseFigure;
-	private MyMenu mymenu;
 
 	public DrawMenager(Area area, MyMenu mymenu) {
 		// TODO Auto-generated constructor stub
 		this.area = area;
-		this.mymenu = mymenu;
 
 	}
 
@@ -63,9 +60,9 @@ public class DrawMenager {
 	public void setFigleColor(Color figleColor) {
 		this.figleColor = figleColor;
 	}
-	
-	public void setPoint(int x,int y,int x1,int y1){
-		draw(new Point(x,y,x1,y1,figleColor));
+
+	public void setPoint(int x, int y, int x1, int y1) {
+		draw(new Point(x, y, x1, y1, figleColor));
 	}
 
 	public CollectionFigle getCf() {

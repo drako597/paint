@@ -13,6 +13,10 @@ import listner.MyKeyWindowListner;
  */
 
 public class PaintWindow extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private MyMenu mymenu = new MyMenu(this);
 	private Area area;
 

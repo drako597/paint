@@ -7,6 +7,10 @@ import figle.*;
 
 public class CollectionFigle implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Collection<Figle> collectionFigle = new LinkedList<>();
 
 	public Collection<Figle> getCollectionFigle() {

@@ -22,7 +22,8 @@ public class MyColorChooserFigleBackGraund implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		Color c;
-		c = new JColorChooser().showDialog((Component)e.getSource(), "Tło", Color.BLACK);
+		c = JColorChooser.showDialog((Component) e.getSource(), "Tło",
+				Color.BLACK);
 		paintWindow.getArea().getDm().setFigleColor(c);
 	}
 
